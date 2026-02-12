@@ -60,6 +60,18 @@
       opacity: 1; /* В конце анимации текст виден */
     }
   }
+    
+        .text--mod{
+         opacity: 0; /* Изначально текст невидим */
+    animation: fadeIn 1s forwards; /* Анимация: имя, длительность, фиксация */
+    animation-delay: 3s; /* Задержка перед началом */
+  }
+
+  @keyframes fadeIn {
+    to {
+      opacity: 1; /* В конце анимации текст виден */
+    }
+    }
 </style>
 </head>
 <body>
@@ -68,8 +80,10 @@
         <h3 class="name">Ночь большой совы</h3>
     <div class="img">
 
-    
+    <div>
     <p class="text">Это милая рыжинькая лисичка</p>
+      <p class="text text--mod">Вам нечего бояться, если вы не колобок</p>
+    </div>
   </div>
   </div>
 </body>
